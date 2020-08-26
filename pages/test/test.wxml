@@ -1,0 +1,19 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml</text>
+<input placeholder='请输入' style="border:1px solid #000"></input>
+<view class="section" >  
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{objectArray}}" mode = "selector">  
+    <view class="picker">  
+      国家：{{objectArray[index]}}  
+    </view>  
+  </picker>  
+</view>  
+ 
+ 
+<view class="section">  
+  <picker mode="date" value="{{date}}" start="1978-01-01" end="5077-1-23" bindchange="bindDateChange">  
+    <view class="picker">  
+      日期: {{dates}}  
+    </view>  
+  </picker>  
+</view> 
